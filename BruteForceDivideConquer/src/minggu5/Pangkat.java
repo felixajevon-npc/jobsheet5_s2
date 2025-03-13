@@ -8,13 +8,14 @@ public class Pangkat {
         pangkat = p;
     }
 
-    int PangkatBF(int a, int n) {
+    int PangkatBF() {
         int hasil = 1;
-        for (int i = 0; i < n; i++) {
-            hasil = hasil * a;
+        for (int i = 0; i < this.pangkat; i++) {
+            hasil = hasil * this.nilai;
         }
         return hasil;
     }
+    
 
     int PangkatDC(int a, int n) {
         if (n == 1) {
